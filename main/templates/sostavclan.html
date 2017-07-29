@@ -1,0 +1,31 @@
+{% extends 'main.html' %}
+
+{% block sostavclan %}
+    <script>document.title = 'Состав клана';</script>
+    <h2>Состав клана</h2>
+    Клан <select id='sostavSselect' class='textbox' >
+            <option value='-1'> - Выберите клан - </option>
+            <option value='57'>Black Hearts</option>
+            <option value='58'>Black WOLFS</option>
+            <option value='7'>Dark Jokers</option>
+            <option value='10'>Equilibrium</option>
+            <option value='1'>Invisibles</option>
+            <option value='21'>MaraderZ</option>
+            <option value='20'>S.Corp</option>
+            <option value='4'>Soldiers of Fortune</option>
+            <option value='0'>Администрация</option>
+            <option value='2'>Братство Стали</option>
+            <option value='16'>Бригада</option>
+            <option value='45'>ГУВД</option>
+            <option value='43'>Миротворцы</option>
+            <option value='34'>Орден Джада</option>
+            <option value='6'>Особый Комитет</option>
+            <option value='33'>СПЕЦНАЗ</option>
+            <option value='30'>Стражи Яра</option>
+            <option value='39'>ХэД Хантерс </option>
+            <option value='52'>Царапычи</option></select>
+    <input type='submit' class='button' value='Показать' onClick='sostavScalc()'/>
+    <table id="sostavS" style="margin-top: 20px; margin-left: 30px;" border="0">
+
+    </table>
+{% endblock %}

@@ -1,0 +1,669 @@
+{% extends 'main.html' %}
+
+{% block qvest %}
+    <script>document.title = 'База квестов';</script>
+    <h2>База квестов</h2>
+    <div>
+        <h1 id="qvest1-3" align="center">Квесты 1-3</h1>
+        <table align="left" border="1" cellpadding="4" style="margin-top: 20px; margin-bottom: 20px;">
+            <tr class="row-2 even">
+            <td colspan="3" style="border: 1px solid gray">
+            <h3><span>УРОВЕНЬ 1:</span></h3>
+            </td>
+            </tr>
+            <tr class="row-3 odd">
+            <td style="border: 1px solid gray">Регистрация в Нижнеатомске<br />[уровень: 1]</td>
+            <td style="border: 1px solid gray">Лейт. Пилоткина (x757 y484)</td>
+            <td style="border: 1px solid gray">100 опыта, свидетельство</td>
+            </tr>
+            <tr class="row-4 even">
+            <td style="border: 1px solid gray">Помощь Жеке<br />[уровень: 1]</td>
+            <td style="border: 1px solid gray">Жека (x683 y261)<br />Механик Слава (x842 y391)<br />Мусорщик (x711 y274)<br />Жека (x683 y261)</td>
+            <td style="border: 1px solid gray">150 опыта и 50 рублей</td>
+            </tr>
+            <tr class="row-5 odd">
+            <td style="border: 1px solid gray">Семейная реликвия<br />[уровень: 1]</td>
+            <td style="border: 1px solid gray">Виктор Иваныч (x760 y467)<br />Мусорщик (x711 y274)<br />Собака (x851 y269)<br />Виктор Иваныч (x760 y467)</td>
+            <td style="border: 1px solid gray">150 опыта и 30 рублей</td>
+            </tr>
+            <tr class="row-8 even">
+            <td style="border: 1px solid gray">Просьба Сахарова<br />[уровень: 1]</td>
+            <td style="border: 1px solid gray">Сержант Сахаров (x781 y423)<br />Прапорщик Галузо (x714 y436)<br />Бочки (x753 y410)<br />Склад (x753 y384)<br />Сержант Сахаров (x781 y423)<br />Прапорщик Галузо (x714 y436)<br /><br />Комментарий: Если у вас сила меньше 6, перед тем как брать квест надо выпить водки (прибавляет силу).</td>
+            <td style="border: 1px solid gray">50 опыта и 20 рублей</td>
+            </tr>
+            <tr class="row-6 even">
+            <td colspan="3" style="border: 1px solid gray">
+            <h3><span>УРОВЕНЬ 2:</span></h3>
+            </td>
+            </tr>
+            <tr class="row-7 odd">
+            <td style="border: 1px solid gray">Основы шпионажа<br />[уровень: 2]</td>
+            <td style="border: 1px solid gray">Доска объявлений возле здания ГУВД (x742 y574)<br />Любой терминал, загружаемая локация (x0 y0)<br />Нычка бомжа (x756 y249)<br />Любой терминал, загружаемая локация (x0 y0)<br />Менеджер восточного МакЯщера (x826 y623)<br />Туалет в восточном МакЯщере (x826 y631)<br />Менеджер Рудольф (x604 y657)<br />Заместитель мэра (x706 y567)<br />Дежурный офицер (ГУВД) (x751 y572)<br />Любой терминал, загружаемая локация (x0 y0)</td>
+            <td style="border: 1px solid gray">300 опыта</td>
+            <tr class="row-9 odd">
+            <td style="border: 1px solid gray">Плохая медицина<br />[уровень: 2]</td>
+            <td style="border: 1px solid gray">Борменталь (x771 y754)<br />Механик Слава (x842 y391)<br />Борменталь (x771 y754)</td>
+            <td style="border: 1px solid gray">Отказаться от денег: 400 опыта<br />Взять деньги: 250 опыта и 50 рублей</td>
+            </tr>
+            <tr class="row-10 even">
+            <td style="border: 1px solid gray">Облученный друг<br />[уровень: 2]</td>
+            <td style="border: 1px solid gray">Федя-Маргинал (x764 y309)<br />Юля "Витаминка" (x778 y378)<br />Федя-Маргинал (x764 y309)<br /><br />Комментарий: доступен после квеста "Тренировка"</td>
+            <td style="border: 1px solid gray">250 опыта и 30 рублей</td>
+            </tr>
+            <tr class="row-11 odd">
+            <td style="border: 1px solid gray">Костоедов суп<br />[уровень: 2]</td>
+            <td style="border: 1px solid gray">Мусорщик (x711 y274)<br /><br />Комментарий: требуется 10 ушей костоеда</td>
+            <td style="border: 1px solid gray">250 опыта и 30 рублей</td>
+            </tr>
+            <tr class="row-12 even">
+            <td style="border: 1px solid gray">Особый подарок<br />[уровень: 2]</td>
+            <td style="border: 1px solid gray">Федя-Маргинал (x764 y309)<br /><br />Комментарий: доступен после прохождения "Облученный друг"</td>
+            <td style="border: 1px solid gray">Серьги: 400 опыта и 200 рублей<br />Бутылка спиртного: 330 опыта и 70 рублей<br />Сковорода: 250 опыта и 30 рублей<br />Цветок: 320 опыта и 150 рублей</td>
+            </tr>
+            <tr class="row-13 odd">
+            <td style="border: 1px solid gray">Тренировка<br />[уровень: 2]</td>
+            <td style="border: 1px solid gray">Рекрутер (x760 y443)<br /><br />Комментарий: для взятия квеста нужно 90р и легче проходить с оружием помощней, чем АКТ, который вам выдадут</td>
+            <td style="border: 1px solid gray">300 опыта и Финка</td>
+            </tr>
+            <tr class="row-14 even">
+            <td style="border: 1px solid gray">Просьба Моники<br />[уровень: 2]</td>
+            <td style="border: 1px solid gray">Моника (x666 y642)<br />Тетя Люся (x343 y1142)</td>
+            <td style="border: 1px solid gray">Солгать тете Люсе: 200 опыта и 15р.<br />Сказать правду тете Люсе: 200 опыта</td>
+            </tr>
+            <tr class="row-15 odd">
+            <td colspan="3" style="border: 1px solid gray">
+            <h3><span>УРОВЕНЬ 3:</span></h3>
+            </td>
+            </tr>
+            <tr class="row-16 even">
+            <td style="border: 1px solid gray">Разыскивается. Тварь<br />[уровень: 3]</td>
+            <td style="border: 1px solid gray">Доска объявлений в Комарах (x306 y1143)<br />Зубастая тварь (x442 y1060)<br />Староста Михал (x312 y1152)</td>
+            <td style="border: 1px solid gray">1500 опыта и 100 рублей</td>
+            </tr>
+            <tr class="row-17 odd">
+            <td style="border: 1px solid gray">Расклейщик объявлений<br />[уровень: 3]</td>
+            <td style="border: 1px solid gray">Дежурный офицер (ГУВД) (x751 y572)<br />Доска объявлений возле здания ГУВД (x742 y574)<br />Доска объявлений у 201 терминала (x800 y389)<br />Доска объявлений в Комарах (x306 y1143)<br />Доска объявлений на Комаринском рынке (x489 y447)<br />Дежурный офицер (ГУВД) (x751 y572)<br /><br />Комментарий: для взятия этого квеста нужно пройти "Проблемы в Горсовете"</td>
+            <td style="border: 1px solid gray">550 опыта и 40</td>
+            </tr>
+            <tr class="row-18 even">
+            <td style="border: 1px solid gray">Техническая смазка<br />[уровень: 3]</td>
+            <td style="border: 1px solid gray">Доска объявлений у 201 терминала (x800 y389)<br />Бочка в Северной пустоши (x750 y95)<br />Механик Слава (x842 y391)</td>
+            <td style="border: 1px solid gray">600 опыта и 60 рублей</td>
+            </tr>
+            <tr class="row-19 odd">
+            <td style="border: 1px solid gray">Кино для взрослых<br />[уровень: 3]</td>
+            <td style="border: 1px solid gray">Федя-Маргинал (x764 y309)<br />Бармен Серж (x704 y643)<br />Федя-Маргинал (x764 y309)<br /><br />Комментарий: если сказать что камера для себя то стоить она будет 60 рублей, а не 100 рублей</td>
+            <td style="border: 1px solid gray">900 опыта, 105 рублей</td>
+            </tr>
+            <tr class="row-20 even">
+            <td style="border: 1px solid gray">Трэш. Лопаты<br />[уровень: 3]</td>
+            <td style="border: 1px solid gray">Староста Михал (x312 y1152)<br /><br />Комментарий: требуются 20 лопат</td>
+            <td style="border: 1px solid gray">1500 опыта и 120 рублей</td>
+            </tr>
+            <tr class="row-21 odd">
+            <td style="border: 1px solid gray">Охота на собак<br />[уровень: 3]</td>
+            <td style="border: 1px solid gray">Дед Прохор (x286 y1091)<br /><br />Комментарий: требуются 20 ушей костоедов и 5 гнаша</td>
+            <td style="border: 1px solid gray">500 опыта и 70 рублей</td>
+            </tr>
+            <tr class="row-22 even">
+            <td style="border: 1px solid gray">Кладбище<br />[уровень: 3]</td>
+            <td style="border: 1px solid gray">Влад (x726 y819)<br />Могильщик (x698 y820)<br />Напильник (x280 y1155)<br />Моника (x666 y642)<br />Влад (x726 y819)</td>
+            <td style="border: 1px solid gray">600 опыта и 150 рублей</td>
+            </tr>
+            <tr class="row-23 odd">
+            <td style="border: 1px solid gray">Возвращение долгов<br />[уровень: 3]</td>
+            <td style="border: 1px solid gray">Доска объявлений возле здания ГУВД (x742 y574)<br />Любой терминал, загружаемая локация (x0 y0)<br />Менеджер Рудольф (x604 y657)<br />Механик Слава (x842 y391)<br />Менеджер Рудольф (x604 y657)<br />Юля "Витаминка" (x778 y378)<br />Менеджер Рудольф (x604 y657)<br />Мэрис Гилтон (x661 y736)<br /><br />Комментарий: доступен после квеста "Подъёмные"</td>
+            <td style="border: 1px solid gray">600 опыта</td>
+            </tr>
+            <tr class="row-24 even">
+            <td style="border: 1px solid gray">Привет братцу<br />[уровень: 3]</td>
+            <td style="border: 1px solid gray">Дежурный офицер (ГУВД) (x751 y572)<br /><br />Комментарий: требуется 15 ушей гнаша</td>
+            <td style="border: 1px solid gray">400 опыта и 30 рублей</td>
+            </tr>
+            <tr class="row-25 odd">
+            <td style="border: 1px solid gray">Охота на гнашей<br />[уровень: 3]</td>
+            <td style="border: 1px solid gray">Дежурный офицер (ГУВД) (x751 y572)<br /><br />Комментарий: требуется 15 ушей гнаша</td>
+            <td style="border: 1px solid gray">550 опыта и 60 рублей</td>
+            </tr>
+            <tr class="row-26 even">
+            <td style="border: 1px solid gray">Трэш. Сигареты в больницу<br />[уровень: 3]</td>
+            <td style="border: 1px solid gray">Курильщик (x723 y726)<br /><br />Комментарий: требуется 20 пачек сигарет</td>
+            <td style="border: 1px solid gray">1500 опыта и 160 рублей</td>
+            </tr>
+            <tr class="row-27 odd">
+            <td style="border: 1px solid gray">Проблемы в Горсовете<br />[уровень: 3]</td>
+            <td style="border: 1px solid gray">Дежурный офицер (ГУВД) (x751 y572)<br />Заместитель мэра (x706 y567)<br />Механик Слава (x842 y391)<br />Дед Прохор (x286 y1091)<br />Эльза (x672 y632)<br />Менеджер Рудольф (x604 y657)<br />Заместитель мэра (x706 y567)<br /><br />Комментарий: код к сейфу: 1961</td>
+            <td style="border: 1px solid gray">1500 опыта и бесплатный VIP на неделю</td>
+            </tr>
+            <tr class="row-28 even">
+            <td style="border: 1px solid gray">Черно-Белый<br />[уровень: 3]</td>
+            <td style="border: 1px solid gray">Игнат (x691 y648)<br />Остап Гоглин (x725 y770)<br /><br />Комментарий: нос можно купить у торговцев</td>
+            <td style="border: 1px solid gray">550 опыта и 150 рублей</td>
+            </tr>
+            <tr class="row-29 odd">
+            <td style="border: 1px solid gray">Тестирование<br />[уровень: 3]</td>
+            <td style="border: 1px solid gray">Ассистент Мытник (x761 y487)<br />Умник (компьютер) (x761 y487)<br />Ассистент Мытник (x761 y487)</td>
+            <td style="border: 1px solid gray">1) Награда: 1000 опыта, сброс 25 умений<br />2) Награда: 1000 опыта, 550 рублей</td>
+            </tr>
+            <tr class="row-30 even">
+            <td style="border: 1px solid gray">Всё не так<br />[уровень: 3]</td>
+            <td style="border: 1px solid gray">Джоржия (x707 y632)<br />Игнат (x691 y648)<br />Джоржия (x707 y632)</td>
+            <td style="border: 1px solid gray">Если помирить их, то награда: 300 опыта</td>
+            </tr>
+            <tr class="row-31 odd">
+            <td style="border: 1px solid gray">Подъёмные<br />[уровень: 3]</td>
+            <td style="border: 1px solid gray">Доска объявлений возле здания ГУВД (x742 y574)<br />Любой терминал, загружаемая локация (x0 y0)<br />Почтальон (x770 y635)<br />Любой терминал, загружаемая локация (x0 y0)<br />Заместитель мэра (x706 y567)<br /><br />Комментарий: с Почтальоном нужно поговорить</td>
+            <td style="border: 1px solid gray">250 опыта и 70 рублей</td>
+            </tr>
+            <tr class="row-32 even">
+            <td style="border: 1px solid gray">В поисках хабара<br />[уровень: 3]</td>
+            <td style="border: 1px solid gray">Доска объявлений у 201 терминала (x800 y389)<br />Труп сталкера (x861 y227)<br />Бочка (x851 y114)<br />Вано (x440 y465)</td>
+            <td style="border: 1px solid gray">600 опыта и 200 рублей</td>
+            </tr>
+            <tr class="row-33 odd">
+            <td style="border: 1px solid gray">Постъядерный пикап<br />[уровень: 3]</td>
+            <td style="border: 1px solid gray">Вано (x440 y465)<br />Мадам Фелиция (x673 y634)<br />Темучин (x483 y451)</td>
+            <td style="border: 1px solid gray">350 опыта и 25 рублей</td>
+            </tr>
+        </table>
+        <h1 id="qvest4-7" align="center">Квесты 4-7</h1>
+        <table  style="margin-top: 20px; margin-bottom: 20px;">
+            <tr class="row-34 even">
+            <td colspan="3" style="border: 1px solid gray">
+            <h3><span>УРОВЕНЬ 4:</span></h3>
+            </td>
+            </tr>
+            <tr class="row-35 odd">
+            <td style="border: 1px solid gray">Пропавшие боеприпасы<br>[уровень: 4]</td>
+            <td style="border: 1px solid gray">Дежурный офицер (ГУВД) (x751 y572)<br>7.62 (x470 y425)<br>Рейдер скупщик (x617 y44)</td>
+            <td style="border: 1px solid gray">Застрелить скупщика: 1000 опыта и 50 рублей.<br>Разойтись мирно: 750 опыта и 25 рублей.</td>
+            </tr>
+            <tr class="row-36 even">
+            <td style="border: 1px solid gray">Редкость. Кинжалы<br>[уровень: 4]</td>
+            <td style="border: 1px solid gray">Вано (x440 y465)<br><br>Комментарий: требуются 10 кинжалов, периодичность - 1 день</td>
+            <td style="border: 1px solid gray">2000 опыта и 50 рублей</td>
+            </tr>
+            <tr class="row-37 odd">
+            <td style="border: 1px solid gray">Упыри<br>[уровень: 4]</td>
+            <td style="border: 1px solid gray">Крис (x667 y618)</td>
+            <td style="border: 1px solid gray">40 рублей и 600 опыта</td>
+            </tr>
+            <tr class="row-38 even">
+            <td style="border: 1px solid gray">Частный детектив<br>[уровень: 4]</td>
+            <td style="border: 1px solid gray">Доска объявлений у 201 терминала (x800 y389)<br>Любой терминал, загружаемая локация (x0 y0)<br>Шарапович (x755 y563)<br>Борода (x716 y449)<br>Лодочник Харон (x862 y845)<br>Жбан (x861 y824)<br>Борода (x716 y449)<br>Шарапович (x755 y563)<br>Наркоша (x750 y554)<br>Любой терминал, загружаемая локация (x0 y0)<br>Шарапович (x755 y563)<br><br>Комментарий: по ходу квеста понадобится бутылка водки. Должен быть пройден квест «Возвращение долгов».</td>
+            <td style="border: 1px solid gray">1000 опыта и 150 рублей</td>
+            </tr>
+            <tr class="row-39 odd">
+            <td style="border: 1px solid gray">Трэш. Ядер-кола<br>[уровень: 4]</td>
+            <td style="border: 1px solid gray">Бармен Серж (x704 y643)<br><br>Комментарий: требуются 30 бутылок Я-колы</td>
+            <td style="border: 1px solid gray">1500 опыта и 60 рублей</td>
+            </tr>
+            <tr class="row-40 even">
+            <td style="border: 1px solid gray">Разыскивается. Ятаган<br>[уровень: 4]</td>
+            <td style="border: 1px solid gray">Доска объявлений на Комаринском рынке (x489 y447)<br>Ятаган (x248 y755)<br>Капитан Л. Ярая (x763 y562)<br><br>Комментарий: базу охраняют рейдеры 6-8 уровней</td>
+            <td style="border: 1px solid gray">2500 опыта и 200 рублей</td>
+            </tr>
+            <tr class="row-41 odd">
+            <td style="border: 1px solid gray">Финотчёты МакЯщера<br>[уровень: 4]</td>
+            <td style="border: 1px solid gray">Тарас Потапенко (x596 y615)<br>Продавец МакЯщера на Комаринском рынке (x484 y472)<br>Продавец МакЯщера на ЖД вокзале (x533 y437)<br>Менеджер восточного МакЯщера (x826 y623)<br>Тарас Потапенко (x596 y615)</td>
+            <td style="border: 1px solid gray">600 опыта и 150 рублей</td>
+            </tr>
+            <tr class="row-42 even">
+            <td style="border: 1px solid gray">Карантин<br>[уровень: 4]</td>
+            <td style="border: 1px solid gray">Гена Зеленый (x846 y449)<br>Профессор Апштайн (x758 y485)<br>Борменталь (x771 y754)<br>Профессор Апштайн (x758 y485)<br>Гена Зеленый (x846 y449)<br>Борменталь (x771 y754)<br>Профессор Апштайн (x758 y485)</td>
+            <td style="border: 1px solid gray">600 опыта и 100 рублей</td>
+            </tr>
+            <tr class="row-43 odd">
+            <td style="border: 1px solid gray">Разыскивается. Китаёза<br>[уровень: 4]</td>
+            <td style="border: 1px solid gray">Доска объявлений на Комаринском рынке (x489 y447)<br>Китаеза (x325 y525)<br>Капитан Л. Ярая (x763 y562)</td>
+            <td style="border: 1px solid gray">2500 опыта и 150 рублей</td>
+            </tr>
+            <tr class="row-44 even">
+            <td style="border: 1px solid gray">Черный ящик<br>[уровень: 4]</td>
+            <td style="border: 1px solid gray">Бармен Серж (x704 y643)<br>Главный пилот (x372 y746)<br>Бармен Серж (x704 y643)<br><br>Комментарий: при себе иметь 50 рублей на всякий случай, но при высоком интеллекте или ловкости есть возможность пройти квест, не тратя 50 рублей</td>
+            <td style="border: 1px solid gray">700 опыта и 350 рублей</td>
+            </tr>
+            <tr class="row-45 odd">
+            <td style="border: 1px solid gray">Загадочный клуб<br>[уровень: 4]</td>
+            <td style="border: 1px solid gray">Суккуба (x652 y674)<br>Бармен Локи (x682 y667)<br>Антон Палавей (x672 y675)<br>Братья А и Бэ (x689 y702)<br>Граф Калиостро (x701 y711)<br>Шар для предсказаний (x703 y711)<br>Граф Калиостро (x701 y711)<br>Сэр Бегемот (x690 y684)<br>Морриган (x698 y701)<br>Элли (x677 y698)<br>Антон Палавей (x672 y675)</td>
+            <td style="border: 1px solid gray">2500 опыта. Обмен квестовых вещей: Статуэтка - отдать Мадам Фелиции (х672 у635) - награда: 1000 опыта, байка<br>Вилка - отдать Мусорщику (х711 у271) - награда: 1000 опыта, 5 стимуляторов</td>
+            </tr>
+            <tr class="row-46 even">
+            <td style="border: 1px solid gray">Месть вдовы<br>[уровень: 4]</td>
+            <td style="border: 1px solid gray">Вдова Катарина (x770 y865)<br>Герхард "Немец" (x445 y437)<br>Борменталь (x771 y754)<br>Вдова Катарина (x770 y865)<br>Наёмник Щегол (x605 y624)<br>Капитан Л. Ярая (x763 y562)<br>Любой терминал, загружаемая локация (x0 y0)<br>Капитан Л. Ярая (x763 y562)<br>Вдова Катарина (x770 y865)</td>
+            <td style="border: 1px solid gray">за подквест "Значки крыс" - 700 опыта и 150 рублей, плюс 1445 опыта за 10 рейдеров и 71 за гнаша. 1) 3000 опыта и 500 рублей 2) 1000 опыта и 370 рублей</td>
+            </tr>
+            <tr class="row-47 odd">
+            <td style="border: 1px solid gray">Трэш. Примусы<br>[уровень: 4]</td>
+            <td style="border: 1px solid gray">Мусорщик (x711 y274)<br><br>Комментарий: требуются 10 примусов</td>
+            <td style="border: 1px solid gray">1500 опыта и 100 рублей</td>
+            </tr>
+            <tr class="row-48 even">
+            <td  colspan="3" style="border: 1px solid gray">
+            <h3><span>УРОВЕНЬ 5:</span></h3>
+            </td>
+            </tr>
+            <tr class="row-49 odd">
+            <td style="border: 1px solid gray">Разыскивается. Кислотный зверь<br>[уровень: 5]</td>
+            <td style="border: 1px solid gray">Доска объявлений на Комаринском рынке (x489 y447)<br>Кислотный зверь (x449 y43)<br>Начальник смены (x514 y121)</td>
+            <td style="border: 1px solid gray">3500 опыта и 150 рублей</td>
+            </tr>
+            <tr class="row-50 even">
+            <td style="border: 1px solid gray">Трэш. Сигареты "конторщику"<br>[уровень: 5]</td>
+            <td style="border: 1px solid gray">Вильям (x672 y635)<br><br>Комментарий: требуется 60 пачек сигарет Critical Strike</td>
+            <td style="border: 1px solid gray">3500 опыта и 500 рублей</td>
+            </tr>
+            <tr class="row-51 odd">
+            <td style="border: 1px solid gray">Разыскивается. Грач<br>[уровень: 5]</td>
+            <td style="border: 1px solid gray">Доска объявлений на Комаринском рынке (x489 y447)<br>Грач (x750 y34)<br>Начальник смены (x514 y121)</td>
+            <td style="border: 1px solid gray">3500 опыта и 200 рублей</td>
+            </tr>
+            <tr class="row-52 even">
+            <td style="border: 1px solid gray">Любовь к роботам<br>[уровень: 5]</td>
+            <td style="border: 1px solid gray">Технолог (x973 y636)<br>Ящик с роботом (x968 y622)<br><br>Комментарий: робот будет стоить 200 рублей</td>
+            <td style="border: 1px solid gray">питомец "Робот1"</td>
+            </tr>
+            <tr class="row-53 odd">
+            <td style="border: 1px solid gray">Генетическая модификация<br>[уровень: 5]</td>
+            <td style="border: 1px solid gray">Профессор Апштайн (x758 y485)<br>Шарапович (x755 y563)<br>Первая подопытная (x865 y715)<br>Второй подопытный (x717 y870)<br>Третий подопытный (труп) (x323 y683)<br>Профессор Апштайн (x758 y485)</td>
+            <td style="border: 1px solid gray">3000 опыта и бесплатная смена двух характеристик</td>
+            </tr>
+            <tr class="row-54 even">
+            <td style="border: 1px solid gray">Редкость. Трубки для табака<br>[уровень: 5]</td>
+            <td style="border: 1px solid gray">Доска объявлений у центрального МакЯщера (x595 y629)<br>Темучин (x483 y451)<br><br>Комментарий: требуется 5 трубок, периодичность - 1 день</td>
+            <td style="border: 1px solid gray">3000 опыта и 60 рублей</td>
+            </tr>
+            <tr class="row-55 odd">
+            <td style="border: 1px solid gray">Трэш. Kaa-beer<br>[уровень: 5]</td>
+            <td style="border: 1px solid gray">Бармен Серж (x704 y643)<br><br>Комментарий: требуется 50 бутылок пива</td>
+            <td style="border: 1px solid gray">2500 опыта и 400 рублей</td>
+            </tr>
+            <tr class="row-56 even">
+            <td style="border: 1px solid gray">Мясо ящера<br>[уровень: 5]</td>
+            <td style="border: 1px solid gray">Менеджер восточного МакЯщера (x826 y623)<br><br>Комментарий: требуется 20 кусков мяса ящера</td>
+            <td style="border: 1px solid gray">2000 опыта и 200 рублей</td>
+            </tr>
+            <tr class="row-57 odd">
+            <td style="border: 1px solid gray">Трэш. Часы<br>[уровень: 5]</td>
+            <td style="border: 1px solid gray">Вано (x440 y465)</td>
+            <td style="border: 1px solid gray">2200 опыта и 120 рублей</td>
+            </tr>
+            <tr class="row-58 even">
+            <td style="border: 1px solid gray">Разыскивается. Викинг<br>[уровень: 5]</td>
+            <td style="border: 1px solid gray">Доска объявлений на Комаринском рынке (x489 y447)<br>Викинг (x151 y886)<br>Капитан Л. Ярая (x763 y562)</td>
+            <td style="border: 1px solid gray">4500 опыта и 300 рублей</td>
+            </tr>
+            <tr class="row-59 odd">
+            <td style="border: 1px solid gray">Разыскивается. Архангел<br>[уровень: 5]</td>
+            <td style="border: 1px solid gray">Доска объявлений в Комарах (x306 y1143)<br>Архангел (x255 y914)<br><br>Комментарий: окружен рейдерами 6 и 7 уровня</td>
+            <td style="border: 1px solid gray">2000 опыта и 50 рублей</td>
+            </tr>
+            <tr class="row-60 even">
+            <td style="border: 1px solid gray">Разыскивается. Скрипач<br>[уровень: 5]</td>
+            <td style="border: 1px solid gray">Доска объявлений в Комарах (x306 y1143)<br>Скрипач (x79 y1158)<br>Староста Михал (x312 y1152)<br><br>Комментарий: окружен рейдерами 7 и 8 уровня</td>
+            <td style="border: 1px solid gray">1500 опыта и 100 рублей</td>
+            </tr>
+            <tr class="row-61 odd">
+            <td style="border: 1px solid gray">Авиакатастрофа<br>[уровень: 5]</td>
+            <td style="border: 1px solid gray">Шарапович (x755 y563)<br>Полковник Ежов (x756 y555)<br>Главный пилот (x372 y746)<br>Крис (x667 y618)<br>Босс Леонард (x670 y627)<br>Поинт 007 (x809 y617)<br>Главный упырь (x523 y381)<br>Кассир Елизавета (x667 y782)<br>Аристотель Ежиков (x748 y760)<br>Поинт 007 (x809 y617)<br>Босс Леонард (x670 y627)<br>Кассир Елизавета (x667 y782)<br>Полковник Ежов (x756 y555)<br>Комендант (x746 y473)</td>
+            <td style="border: 1px solid gray">5000 опыта и 300 рублей</td>
+            </tr>
+            <tr class="row-62 even">
+            <td  colspan="3" style="border: 1px solid gray">
+            <h3><span>УРОВЕНЬ 6:</span></h3>
+            </td>
+            </tr>
+            <tr class="row-63 odd">
+            <td style="border: 1px solid gray">Кровавое месиво<br>[уровень: 6]</td>
+            <td style="border: 1px solid gray">Шарапович (x755 y563)<br>Сержант Коломов (x478 y518)<br>Труп (x477 y517)<br>Стол (x477 y516)<br>Шкаф (x480 y515)<br>Сейф (x472 y514)<br>Судмедэксперт Василич (x768 y573)<br>Сержант Коломов (x478 y518)<br>Шеф-повар Ганс (x704 y666)<br>Ульян Коронный (x615 y789)<br>Сержант Коломов (x478 y518)<br>Мадам Фелиция (x673 y634)<br>Капитан Л. Ярая (x763 y562)<br>Ульян Коронный (x615 y789)<br>Сержант Коломов (x478 y518)</td>
+            <td style="border: 1px solid gray">Если выбрать вариант с поваром: 3000 опыта и 180 рублей.<br>Если сдать Ульяна Коронного: 4000 опыта, 300 рублей.<br>Если отпустить Ульяна Коронного: 5000 опыта, 240 рублей.</td>
+            </tr>
+            <tr class="row-64 even">
+            <td style="border: 1px solid gray">Редкость. Ядовитые железы<br>[уровень: 6]</td>
+            <td style="border: 1px solid gray">Доска объявлений у центрального МакЯщера (x595 y629)<br>Аптекарь (x764 y767)<br><br>Комментарий: требуются 10 желез ящера</td>
+            <td style="border: 1px solid gray">4500 опыта и 70 рублей</td>
+            </tr>
+            <tr class="row-65 odd">
+            <td style="border: 1px solid gray">Трэш. Спальники<br>[уровень: 6]</td>
+            <td style="border: 1px solid gray">Веня-порностар (x700 y237)<br><br>Комментарий: требуются 20 спальников</td>
+            <td style="border: 1px solid gray">3500 опыта и 220 рублей</td>
+            </tr>
+            <tr class="row-66 even">
+            <td style="border: 1px solid gray">Трэш. КПК<br>[уровень: 6]</td>
+            <td style="border: 1px solid gray">Механик Слава (x842 y391)<br><br>Комментарий: требуются 5 битых КПК</td>
+            <td style="border: 1px solid gray">2000 опыта и 90 рублей</td>
+            </tr>
+            <tr class="row-67 odd">
+            <td style="border: 1px solid gray">Красиво жить не запретишь<br>[уровень: 6]</td>
+            <td style="border: 1px solid gray">Рената Ливонская (x869 y548)<br>Бармен Локи (x682 y667)<br>Кассир Елизавета (x667 y782)<br>Бармен Локи (x682 y667)<br>Рената Ливонская (x869 y548)<br><br>Комментарий: для прохождения нужно 87 рублей</td>
+            <td style="border: 1px solid gray">1400 опыта и 400 рублей</td>
+            </tr>
+            <tr class="row-68 even">
+            <td style="border: 1px solid gray">Вечная Слава<br>[уровень: 6]</td>
+            <td style="border: 1px solid gray">Памятник бета-тестерам (x774 y448)<br>Механик Слава (x842 y391)<br>Мусорщик (x711 y274)<br>Памятник бета-тестерам (x774 y448)</td>
+            <td style="border: 1px solid gray">5000 опыта и 350 рублей</td>
+            </tr>
+            <tr class="row-69 odd">
+            <td style="border: 1px solid gray">Железный конь<br>[уровень: 6]</td>
+            <td style="border: 1px solid gray">Александра ГР. (x423 y1143)<br>Мусорщик (x711 y274)<br>Интендант (x771 y472)<br>Грайвер (x1160 y645)<br>Александра ГР. (x423 y1143)<br><br>Комментарий: в ходе квеста придется потратить 100 рублей</td>
+            <td style="border: 1px solid gray">5000 опыта и 500 рублей</td>
+            </tr>
+            <tr class="row-70 even">
+            <td style="border: 1px solid gray">Трэш. Фляги<br>[уровень: 6]</td>
+            <td style="border: 1px solid gray">Интендант (x771 y472)<br><br>Комментарий: требуются 30 фляг</td>
+            <td style="border: 1px solid gray">3500 опыта и 300 рублей</td>
+            </tr>
+            <tr class="row-71 odd">
+            <td style="border: 1px solid gray">Убийство за трусы<br>[уровень: 6]</td>
+            <td style="border: 1px solid gray">Рената Ливонская (x869 y548)<br>Стриптизерша (x695 y638)<br>Роберт Нагорных (x770 y738)<br>Стриптизерша (x695 y638)</td>
+            <td style="border: 1px solid gray">2500 опыта, Майка стрептизерши</td>
+            </tr>
+            <tr>
+            <td style="border: 1px solid gray">Личное дело<br>[уровень: 6]</td>
+            <td style="border: 1px solid gray">Офицер НКВД (x880 y481)<br>Полковник Беляйко (x897 y446)<br>Босс Леонард (x670 y627)<br>Любой терминал, загружаемая локация (x0 y0)<br>Босс Леонард (x670 y627)</td>
+            <td style="border: 1px solid gray">3500 опыта и 500 рублей</td>
+            </tr>
+            <tr class="row-73 odd">
+            <td style="border: 1px solid gray">Разыскивается. Краса<br>[уровень: 6]</td>
+            <td style="border: 1px solid gray">Доска объявлений на Комаринском рынке (x489 y447)<br>Краса (x177 y485)<br>Капитан Л. Ярая (x763 y562)</td>
+            <td style="border: 1px solid gray">4500 опыта и 300 рублей</td>
+            </tr>
+            <tr class="row-74 even">
+            <td  colspan="3" style="border: 1px solid gray">
+            <h3><span>УРОВЕНЬ 7:</span></h3>
+            </td>
+            </tr>
+            <tr class="row-75 odd">
+            <td style="border: 1px solid gray">Редкость. Инъекторы<br>[уровень: 7]</td>
+            <td style="border: 1px solid gray">Доска объявлений у центрального МакЯщера (x595 y629)<br>Интендант (x771 y472)<br><br>Комментарий: требуются 10 инъекторов, периодичность - 1 день</td>
+            <td style="border: 1px solid gray">7000 опыта</td>
+            </tr>
+            <tr class="row-76 even">
+            <td style="border: 1px solid gray">Питомец<br>[уровень: 7]</td>
+            <td style="border: 1px solid gray">Тарас Потапенко (x596 y615)<br>Цыган Яшка (x284 y1172)<br>Сучка Клёпа (x181 y1170)<br>Цыган Яшка (x284 y1172)<br>Хадоркин (x773 y759)<br>Юля "Витаминка" (x778 y378)<br>Темучин (x483 y451)<br>Сучка Клёпа (x181 y1170)<br>Цыган Яшка (x284 y1172)<br>Тарас Потапенко (x596 y615)</td>
+            <td style="border: 1px solid gray">6000 опыта и 350 рублей</td>
+            </tr>
+            <tr class="row-77 odd">
+            <td style="border: 1px solid gray">Поздравь кореша!<br>[уровень: 7]</td>
+            <td style="border: 1px solid gray">Филипп (x670 y617)<br>Грайвер (x1160 y645)<br>Цыган Яшка (x284 y1172)<br>Любой терминал, загружаемая локация (x0 y0)<br>Ди-Джей Толян (x1080 y867)<br>Филипп (x670 y617)</td>
+            <td style="border: 1px solid gray">1) 8900 опыта и 400 рублей<br>2) при себе иметь 5 сломанных раций или 500 р -&gt; идем к Юннату Пете -&gt; Ди-джею -&gt; Филиппу -&gt; 10000 опыта и 1000 рублей</td>
+            </tr>
+            <tr class="row-78 even">
+            <td style="border: 1px solid gray">Речные пираты<br>[уровень: 7]</td>
+            <td style="border: 1px solid gray">Лодочник Харон (x862 y845)<br>Любой терминал, загружаемая локация (x0 y0)<br>Лодочник Харон (x862 y845)</td>
+            <td style="border: 1px solid gray">13200 опыта и 300 рублей</td>
+            </tr>
+            <tr class="row-79 odd">
+            <td style="border: 1px solid gray">Разыскивается. Джигит<br>[уровень: 7]</td>
+            <td style="border: 1px solid gray">Доска объявлений на Комаринском рынке (x489 y447)<br>Джигит (x153 y289)<br>Начальник смены (x514 y121)</td>
+            <td style="border: 1px solid gray">6000 опыта и 450 рублей</td>
+            </tr>
+            <tr class="row-80 even">
+            <td style="border: 1px solid gray">Разыскивается. Чингачгук<br>[уровень: 7]</td>
+            <td style="border: 1px solid gray">Доска объявлений на Комаринском рынке (x489 y447)<br>Чингачгук (x203 y121)</td>
+            <td style="border: 1px solid gray">6000 опыта и 500 рублей</td>
+            </tr>
+            <tr class="row-81 odd">
+            <td style="border: 1px solid gray">Завод<br>[уровень: 7]</td>
+            <td style="border: 1px solid gray">Синий (x960 y630)<br>Мусорщик (x711 y274)<br>Синий (x960 y630)<br>Кассир Елизавета (x667 y782)<br>Синий (x960 y630)<br>Тайник рядом с Синим (x963 y629)<br>Синий (x960 y630)</td>
+            <td style="border: 1px solid gray">5000 опыта и 60 стимуляторов</td>
+            </tr>
+            <tr class="row-82 even">
+            <td style="border: 1px solid gray">Трэш. Rarro<br>[уровень: 7]</td>
+            <td style="border: 1px solid gray">Вано (x440 y465)<br><br>Комментарий: требуются 20 зажигалок Rarro</td>
+            <td style="border: 1px solid gray">3300 опыта и 280 рублей</td>
+            </tr>
+            <tr class="row-83 odd">
+            <td style="border: 1px solid gray">Трэш. Rarro Gold<br>[уровень: 7]</td>
+            <td style="border: 1px solid gray">Менеджер Рудольф (x604 y657)<br><br>Комментарий: требуются 5 зажигалок Rarro Gold</td>
+            <td style="border: 1px solid gray">4000 опыта и 300 рублей</td>
+            </tr>
+        </table>
+        <h1 id="qvest8-10" align="center">Квесты 8-10</h1>
+        <table  style="margin-top: 20px; margin-bottom: 20px;">
+            <tr class="row-84 even">
+            <td colspan="3" style="border: 1px solid gray">
+            <h3><span>УРОВЕНЬ 8:</span></h3>
+            </td>
+            </tr>
+            <tr class="row-85 odd">
+            <td style="border: 1px solid gray">Редкость. Транзисторы<br>[уровень: 8]</td>
+            <td style="border: 1px solid gray">Доска объявлений у центрального МакЯщера (x595 y629)<br>Юннат Петя (x849 y397)<br><br>Комментарий: требуются 15 транзисторов, периодичность - 7 дней</td>
+            <td style="border: 1px solid gray">7680 опыта и 160 рублей</td>
+            </tr>
+            <tr class="row-86 even">
+            <td style="border: 1px solid gray">Трэш. Кружки<br>[уровень: 8]</td>
+            <td style="border: 1px solid gray">Доска объявлений у 201 терминала (x800 y389)<br>Федя-Маргинал (x764 y309)<br><br>Комментарий: требуются 20 кружек, периодичность - 7 дней</td>
+            <td style="border: 1px solid gray">10000 опыта и 220 рублей</td>
+            </tr>
+            <tr class="row-87 odd">
+            <td style="border: 1px solid gray">Трэш. Презервативы<br>[уровень: 8]</td>
+            <td style="border: 1px solid gray">Доска объявлений у 201 терминала (x800 y389)<br>Мадам Фелиция (x673 y634)<br><br>Комментарий: требуются 20 презервативов, периодичность - 7 дней</td>
+            <td style="border: 1px solid gray">10000 опыта и 180 рублей</td>
+            </tr>
+            <tr class="row-88 even">
+            <td style="border: 1px solid gray">Грузоподъемность<br>[уровень: 8]</td>
+            <td style="border: 1px solid gray">Профессор Апштайн (x758 y485)<br>Механик Слава (x842 y391)<br>Любой терминал, загружаемая локация (x0 y0)<br>Профессор Апштайн (x758 y485)<br><br>Комментарий: за квест придется потратить 400 рублей</td>
+            <td style="border: 1px solid gray">12500 опыта, максимальный вес +25 единиц</td>
+            </tr>
+            <tr class="row-89 odd">
+            <td style="border: 1px solid gray">Трэш. Бинокли<br>[уровень: 8]</td>
+            <td style="border: 1px solid gray">Доска объявлений у 201 терминала (x800 y389)<br>Герхард "Немец" (x445 y437)<br><br>Комментарий: требуются 20 биноклей, периодичность - 7 дней</td>
+            <td style="border: 1px solid gray">10000 опыта и 540 рублей</td>
+            </tr>
+            <tr class="row-90 even">
+            <td style="border: 1px solid gray">Мозголомы<br>[уровень: 8]</td>
+            <td style="border: 1px solid gray">Офицер НКВД (x880 y481)<br>Полковник Беляйко (x897 y446)<br>Могильщик (x698 y820)<br>Любой терминал, загружаемая локация (x0 y0)<br>Офицер НКВД (x880 y481)<br>Полковник Беляйко (x897 y446)</td>
+            <td style="border: 1px solid gray">40000 опыта и 500 рублей</td>
+            </tr>
+            <tr class="row-91 odd">
+            <td style="border: 1px solid gray">Коммуникации<br>[уровень: 8]</td>
+            <td style="border: 1px solid gray">Доска объявлений у центрального МакЯщера (x595 y629)<br>Любой терминал, загружаемая локация (x0 y0)</td>
+            <td style="border: 1px solid gray">20000 опыта и 400 рублей</td>
+            </tr>
+            <tr class="row-92 even">
+            <td style="border: 1px solid gray">Спецназ<br>[уровень: 8]</td>
+            <td style="border: 1px solid gray">Бармен Локи (x682 y667)<br>Любой терминал, загружаемая локация (x0 y0)<br>Капитан Л. Ярая (x763 y562)<br>Любой терминал, загружаемая локация (x0 y0)<br>Полковник Ежов (x756 y555)</td>
+            <td style="border: 1px solid gray">15000 опыта и 250 рублей</td>
+            </tr>
+            <tr class="row-93 odd">
+            <td style="border: 1px solid gray">Самолёт-инфо<br>[уровень: 8]</td>
+            <td style="border: 1px solid gray">Доска объявлений у центрального МакЯщера (x595 y629)<br>Комендант (x746 y473)<br>Бармен Локи (x682 y667)<br>Профессор Апштайн (x758 y485)<br>Комендант (x746 y473)<br>Староста Михал (x312 y1152)<br>Александра ГР. (x423 y1143)<br>Комендант (x746 y473)<br>Александра ГР. (x423 y1143)<br>Анисий Замешало (x743 y749)<br>Комендант (x746 y473)<br>Поинт 007 (x809 y617)<br>Нода (x610 y654)<br>Комендант (x746 y473)<br>Любой терминал, загружаемая локация (x0 y0)</td>
+            <td style="border: 1px solid gray">5000 опыта и 750 рублей</td>
+            </tr>
+            <tr class="row-94 even">
+            <td style="border: 1px solid gray">Дальний хутор<br>[уровень: 8]</td>
+            <td style="border: 1px solid gray">Дежурный офицер (ГУВД) (x751 y572)<br>Пьяный клиент (x689 y644)<br>Любой терминал, загружаемая локация (x0 y0)<br>Пьяный клиент (x689 y644)<br><br>Комментарий: умирать в этом квесте нельзя, иначе придется начинать заново</td>
+            <td style="border: 1px solid gray">13000 опыта, 10 мин "Лепесток", майка "Вождь"</td>
+            </tr>
+            <tr class="row-95 odd">
+            <td style="border: 1px solid gray">Шрёдингер<br>[уровень: 8]</td>
+            <td style="border: 1px solid gray">Доска объявлений возле здания ГУВД (x742 y574)<br>Шредингер (x911 y685)<br>Капитан Л. Ярая (x763 y562)<br><br>Комментарий: квест можно пройти не убивая Шредингера, а договорившись с ним</td>
+            <td style="border: 1px solid gray">6000 опыта и 300 рублей</td>
+            </tr>
+            <tr class="row-96 even">
+            <td style="border: 1px solid gray">Логово<br>[уровень: 8]</td>
+            <td style="border: 1px solid gray">Доска объявлений на Комаринском рынке (x489 y447)<br>Шарапович (x755 y563)<br>Любой терминал, загружаемая локация (x0 y0)<br>Шарапович (x755 y563)</td>
+            <td style="border: 1px solid gray">2500 опыта и 200 рублей</td>
+            </tr>
+            <tr class="row-97 odd">
+            <td colspan="3" style="border: 1px solid gray">
+            <h3><span>УРОВЕНЬ 9:</span></h3>
+            </td>
+            </tr>
+            <tr class="row-98 even">
+            <td style="border: 1px solid gray">Викторина о Высоцком<br>[уровень: 9]</td>
+            <td style="border: 1px solid gray">Халкин (x699 y654)</td>
+            <td style="border: 1px solid gray">30 гранат Efrag и 10000 опыта</td>
+            </tr>
+            <tr class="row-99 odd">
+            <td style="border: 1px solid gray">Трэш. Плачущий мальчик<br>[уровень: 9]</td>
+            <td style="border: 1px solid gray">Доска объявлений на Комаринском рынке (x489 y447)<br>Эштон (x672 y649)<br><br>Комментарий: требуются 20 журналов "Плачущий мальчик", периодичность - 7 дней</td>
+            <td style="border: 1px solid gray">360 рублей и 13000 опыта</td>
+            </tr>
+            <tr class="row-100 even">
+            <td style="border: 1px solid gray">Ствол<br>[уровень: 9]</td>
+            <td style="border: 1px solid gray">Босс Леонард (x670 y627)<br>Герхард "Немец" (x445 y437)<br>Шарапович (x755 y563)<br>Грайвер (x1160 y645)<br>Механик Слава (x842 y391)<br>Главный пилот (x372 y746)<br>Босс Леонард (x670 y627)<br>Антон Палавей (x672 y675)<br>Любой терминал, загружаемая локация (x0 y0)<br>Босс Леонард (x670 y627)</td>
+            <td style="border: 1px solid gray">20000 опыта и 2000 рублей</td>
+            </tr>
+            <tr class="row-101 odd">
+            <td style="border: 1px solid gray">Трэш. Ганжа<br>[уровень: 9]</td>
+            <td style="border: 1px solid gray">Доска объявлений на Комаринском рынке (x489 y447)<br>Темучин (x483 y451)<br><br>Комментарий: требуются 20 порций ганжи, периодичность - 7 дней</td>
+            <td style="border: 1px solid gray">360 рублей и 13000 опыта</td>
+            </tr>
+            <tr class="row-102 even">
+            <td style="border: 1px solid gray">Трэш. GPS<br>[уровень: 9]</td>
+            <td style="border: 1px solid gray">Доска объявлений на Комаринском рынке (x489 y447)<br>Юннат Петя (x849 y397)<br><br>Комментарий: требуется: 20 сломанных GPS, периодичность - 7 дней</td>
+            <td style="border: 1px solid gray">470 рублей и 13000 опыта</td>
+            </tr>
+            <tr class="row-103 odd">
+            <td style="border: 1px solid gray">Наёмники<br>[уровень: 9]</td>
+            <td style="border: 1px solid gray">Игнат (x691 y648)<br>Грайвер (x1160 y645)<br>Шкаф в доме Бени Червонца (x31 y968)<br>Терминал на первом этаже форта (x1180 y954)<br>Грайвер (x1160 y645)</td>
+            <td style="border: 1px solid gray">30000 опыта и 200 рублей</td>
+            </tr>
+            <tr class="row-104 even">
+            <td colspan="3" style="border: 1px solid gray">
+            <h3><span>УРОВЕНЬ 10:</span></h3>
+            </td>
+            </tr>
+            <tr class="row-105 odd">
+            <td style="border: 1px solid gray">Химзащита<br>[уровень: 10]</td>
+            <td style="border: 1px solid gray">Доска объявлений возле здания ГУВД (x742 y574)<br>Интендант (x771 y472)<br><br>Комментарий: требуются противогазы 10 шт, фильтры пф1 10 шт., пф2 10 шт., пф3 10 шт., периодичность - 7 дней</td>
+            <td style="border: 1px solid gray">30000 опыта и 300 рублей</td>
+            </tr>
+            <tr class="row-106 even">
+            <td style="border: 1px solid gray">Дикий остров<br>[уровень: 10]</td>
+            <td style="border: 1px solid gray">Грайвер (x1160 y645)<br>Лодочник Харон (x862 y845)<br>Любой терминал, загружаемая локация (x0 y0)<br>Борменталь (x771 y754)<br>Грайвер (x1160 y645)</td>
+            <td style="border: 1px solid gray">40000 опыта и возможность бесплатно перекинуть 2 стата</td>
+            </tr>
+            <tr class="row-107 odd">
+            <td style="border: 1px solid gray">ИБИ на острове<br>[уровень: 10]</td>
+            <td style="border: 1px solid gray">Грайвер (x1160 y645)<br>Лодочник Харон (x862 y845)<br>Любой терминал, загружаемая локация (x0 y0)<br>Грайвер (x1160 y645)<br><br>Комментарий: должен быть пройден квест «Дикий остров»</td>
+            <td style="border: 1px solid gray">40000 опыта, 4000 рублей и возможность сбросить 25 очков умений</td>
+            </tr>
+            <tr class="row-108 even">
+            <td style="border: 1px solid gray">Дистанционное убийство<br>[уровень: 10]</td>
+            <td style="border: 1px solid gray">Крис (x667 y618)<br>Аль-Таир (x1156 y636)<br>Любой терминал, загружаемая локация (x0 y0)<br>Крис (x667 y618)</td>
+            <td style="border: 1px solid gray">45000 опыта и 1000 рублей</td>
+            </tr>
+            <tr class="row-109 odd">
+            <td style="border: 1px solid gray">Последний сеанс<br>[уровень: 10]</td>
+            <td style="border: 1px solid gray">Крис (x667 y618)<br>Любой терминал, загружаемая локация (x0 y0)<br>Крис (x667 y618)<br><br>Комментарий: при себе нужно иметь 100-1000 рублей на подкуп</td>
+            <td style="border: 1px solid gray">35000 опыта и 1400 рублей</td>
+            </tr>
+        </table>
+        <h1 id="qvest11-14"  align="center">Квесты 11-14</h1>
+        <table style="margin-top: 20px; margin-bottom: 20px;">
+            <tr class="row-110 even">
+            <td colspan="3" style="border: 1px solid gray">
+            <h3><span>УРОВЕНЬ 11:</span></h3>
+            </td>
+            </tr>
+            <tr class="row-111 odd">
+            <td style="border: 1px solid gray">Трэш. Градусник<br>[уровень: 11]</td>
+            <td style="border: 1px solid gray">Снабженец Хуго (x660 y1825)<br><br>Комментарий: Нужно собрать 30 градусников. Выпадает с рейдеров 13-16 уровня. Периодичность - 24 часа.</td>
+            <td style="border: 1px solid gray">550 рублей и 6000 опыта</td>
+            </tr>
+            <tr class="row-112 even">
+            <td style="border: 1px solid gray">Трэш. Пульверизатор<br>[уровень: 11]</td>
+            <td style="border: 1px solid gray">Снабженец Хуго (x660 y1825)<br><br>Комментарий: Нужно собрать 15 пульверизаторов. Выпадает с рейдеров 13-16 уровня. Периодичность - 24 часа.</td>
+            <td style="border: 1px solid gray">550 рублей и 6000 опыта</td>
+            </tr>
+            <tr class="row-113 odd">
+            <td style="border: 1px solid gray">Трэш. Изолента<br>[уровень: 11]</td>
+            <td style="border: 1px solid gray">Снабженец Хуго (x660 y1825)<br><br>Комментарий: Нужно собрать 20 мотков изоленты. Выпадает с рейдеров 13-16 уровня. Периодичность - 24 часа.</td>
+            <td style="border: 1px solid gray">500 рублей и 6000 опыта</td>
+            </tr>
+            <tr class="row-114 even">
+            <td style="border: 1px solid gray">Разведчик<br>[уровень: 11]</td>
+            <td style="border: 1px solid gray">Анисий Замешало (x743 y749)<br>Борменталь (x771 y754)<br>Анисий Замешало (x743 y749)<br>Борменталь (x771 y754)<br>Комендант (x746 y473)<br>Интендант (x771 y472)<br>Городовой (x628 y186)<br>Любой терминал, загружаемая локация (x0 y0)</td>
+            <td style="border: 1px solid gray">Отказавшись от денег: гранаты EVO-13 20 шт. и 72000 опыта.<br>Потребуя деньги: гранаты EVO-13 20 шт. и 48000 опыта.</td>
+            </tr>
+            <tr class="row-115 odd">
+            <td style="border: 1px solid gray">Трэш. Печень собаки<br>[уровень: 11]</td>
+            <td style="border: 1px solid gray">Снабженец Хуго (x660 y1825)<br><br>Комментарий: Нужно собрать 15 печенок собаки. Выпадает с Блэкхаундов 12 уровня. Периодичность - 24 часа.</td>
+            <td style="border: 1px solid gray">400 рублей и 5000 опыта</td>
+            </tr>
+            <tr class="row-116 even">
+            <td colspan="3" style="border: 1px solid gray">
+            <h3><span>УРОВЕНЬ 12:</span></h3>
+            </td>
+            </tr>
+            <tr class="row-117 odd">
+            <td style="border: 1px solid gray">Трэш. Сигнальные ракеты<br>[уровень: 12]</td>
+            <td style="border: 1px solid gray">Контрабандист Эмба (x1913 y110)<br><br>Комментарий: Необходимо собрать 30 сигнальных ракет. Периодичность - 24 часа.</td>
+            <td style="border: 1px solid gray">500 рублей и 5000 опыта</td>
+            </tr>
+            <tr class="row-118 even">
+            <td style="border: 1px solid gray">Трэш. Пшеница<br>[уровень: 12]</td>
+            <td style="border: 1px solid gray">Контрабандист Эмба (x1913 y110)<br><br>Комментарий: Необходимо собрать 15 мешков пшеницы. Периодичность - 24 часа.</td>
+            <td style="border: 1px solid gray">450 рублей и 5000 опыта</td>
+            </tr>
+            <tr class="row-119 odd">
+            <td style="border: 1px solid gray">Трэш. Выделанная кожа<br>[уровень: 12]</td>
+            <td style="border: 1px solid gray">Контрабандист Эмба (x1913 y110)<br><br>Комментарий: Необходимо собрать 20 кусков выделанной кожи. Периодичность - 24 часа.</td>
+            <td style="border: 1px solid gray">500 рублей и 5000 опыта</td>
+            </tr>
+            <tr class="row-120 even">
+            <td style="border: 1px solid gray">Караван<br>[уровень: 12]</td>
+            <td style="border: 1px solid gray">Труп возле рад. форта (x670 y42)<br>Профессор Апштайн (x758 y485)<br>Ассистент Мытник (x761 y487)<br>Юннат Петя (x849 y397)<br>Антон Палавей (x672 y675)<br><br>Комментарий: после Антона нужно идти либо к Боссу Леонарду (x670 y626), либо к Коменданту Нагорных, во время выполнения квеста умирать нельзя</td>
+            <td style="border: 1px solid gray">40000 опыта и 1500 запчастей</td>
+            </tr>
+            <tr class="row-121 odd">
+            <td style="border: 1px solid gray">Крабопет<br>[уровень: 12]</td>
+            <td style="border: 1px solid gray">Грайвер (x1160 y645)<br><br>Комментарий: с собой нужно иметь 1000 рублей</td>
+            <td style="border: 1px solid gray">12000 опыта и питомец "Хэдкраб"</td>
+            </tr>
+            <tr class="row-122 even">
+            <td style="border: 1px solid gray">Обитель<br>[уровень: 12]</td>
+            <td style="border: 1px solid gray">Комендант (x746 y473)<br>Профессор Апштайн (x758 y485)<br>Любой терминал, загружаемая локация (x0 y0)<br>Профессор Апштайн (x758 y485)<br>Комендант (x746 y473)<br><br>Комментарий: нужно за ограниченное время спасти заложницу, так что противников можно игнорировать, поговорив с заложницей, убиваем ее и выходим с локации оттуда же, где и заходили, во время выполнения квеста умирать нельзя</td>
+            <td style="border: 1px solid gray">35000 опыта и 1000 рублей</td>
+            </tr>
+            <tr class="row-123 odd">
+            <td colspan="3" style="border: 1px solid gray">
+            <h3><span>УРОВЕНЬ 13:</span></h3>
+            </td>
+            </tr>
+            <tr class="row-124 even">
+            <td style="border: 1px solid gray">Трэш. Микросхемы<br>[уровень: 13]</td>
+            <td style="border: 1px solid gray">Контрабандист Эмба (x1913 y110)<br><br>Комментарий: Необходимо собрать 10 микросхем. Периодичность - 24 часа.</td>
+            <td style="border: 1px solid gray">400 рублей и 5000 опыта</td>
+            </tr>
+            <tr class="row-125 odd">
+            <td style="border: 1px solid gray">Трэш. Моторное масло<br>[уровень: 13]</td>
+            <td style="border: 1px solid gray">Контрабандист Эмба (x1913 y110)<br><br>Комментарий: Необходимо собрать 10 канистр с моторным маслом. Периодичность - 24 часа.</td>
+            <td style="border: 1px solid gray">400 рублей и 5000 опыта</td>
+            </tr>
+            <tr class="row-126 even">
+            <td style="border: 1px solid gray">Редкость. Электродвигатели<br>[уровень: 13]</td>
+            <td style="border: 1px solid gray">Мэд Макс (x1417 y540)<br><br>Комментарий: Необходимо собрать 5 электродвигателей. Периодичность - 7 дней.</td>
+            <td style="border: 1px solid gray">700 рублей 18000 опыта</td>
+            </tr>
+            <tr class="row-127 odd">
+            <td style="border: 1px solid gray">Редкость. Подшипники<br>[уровень: 13]</td>
+            <td style="border: 1px solid gray">Мэд Макс (x1417 y540)<br><br>Комментарий: Необходимо собрать 5 подшипников. Периодичность - 7 дней.</td>
+            <td style="border: 1px solid gray">700 рублей и 18000 опыта</td>
+            </tr>
+            <tr class="row-128 even">
+            <td colspan="3" style="border: 1px solid gray">
+            <h3><span>УРОВЕНЬ 14:</span></h3>
+            </td>
+            </tr>
+            <tr class="row-129 odd">
+            <td style="border: 1px solid gray">Редкость. Хитин<br>[уровень: 14]</td>
+            <td style="border: 1px solid gray">Охотник Артемий (x1360 y1100)<br><br>Комментарий: Необходимо собрать 5 хитиновых пластин. Периодичность - 7 дней.</td>
+            <td style="border: 1px solid gray">450 рублей и 18000 опыта</td>
+            </tr>
+            <tr class="row-130 even">
+            <td style="border: 1px solid gray">Трэш. Радиоактивное мясо<br>[уровень: 14]</td>
+            <td style="border: 1px solid gray">Охотник Артемий (x1360 y1100)<br><br>Комментарий: Необходимо собрать 5 кусков радиоактивного мяса. Периодичность - 24 часа.</td>
+            <td style="border: 1px solid gray">450 рублей и 5000 опыта</td>
+            </tr>
+            <tr class="row-131 odd">
+            <td style="border: 1px solid gray">Трэш. Когти мутанта<br>[уровень: 14]</td>
+            <td style="border: 1px solid gray">Охотник Артемий (x1360 y1100)<br><br>Комментарий: Необходимо собрать 10 когтей мутанта. Периодичность - 24 часа.</td>
+            <td style="border: 1px solid gray">450 рублей и 5000 опыта</td>
+            </tr>
+        </table>
+    </div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'main.html' %}
+
+{% block online %}
+    <script>document.title = 'Онлайн игры';</script>
+    <h2>Онлайн игры</h2>
+    Пользователей онлайн: {{ count }}<br>
+    Невидимых: {{ invisible }}<br><br>
+    <div style="position: relative; float: left; width: 200px;">
+        {% for i in vclane %}
+            {% if i.nameclan %}
+                <p style="margin-top: 13px; margin-bottom: 0px; margin-left: -5px"><b>{{ i.nameclan }}:</b></p>
+            {% else %}
+                <p style="margin: 5px;">
+                    <img src="http://unit-online.ru/icons/icon/clan{{ i.clan }}.png"> {{ i.name }}[{{ i.level }}] <a href="http://unit-online.ru/character?id={{ i.id }}" target="_blank"> <img src=http://forum.unit-online.ru/static/img/info.gif></a><br>
+                </p>
+            {% endif %}
+
+        {% endfor %}
+    </div>
+    <div>
+        <table border="0">
+            {% for i in nevclane %}
+                <tr>
+                    <td style="padding: 1px">
+                       {{ i.name }}[{{ i.level }}] <a href="http://unit-online.ru/character?id={{ i.id }}" target="_blank"> <img src=http://forum.unit-online.ru/static/img/info.gif></a><br>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

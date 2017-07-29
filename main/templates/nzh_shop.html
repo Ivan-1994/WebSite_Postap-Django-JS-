@@ -1,0 +1,579 @@
+{% extends 'main.html' %}
+{% load staticfiles %}
+{% block nzh_shop %}
+    <script>document.title = 'Магазин жетонов';</script>
+    <h2>Магазин жетонов</h2>
+<script type="text/javascript">
+    $(document).ready(function(){
+    //сама функция по появлению картинки
+        function showImg(){
+        //получаем название картинки
+            var dataImg = $(this).attr('data-img');
+            //проставляем ссылку на картинкку
+            $(".showImgDiv img").attr('src',dataImg);
+            //получаем позиуию области для отображения и корректируем 
+            //отступ от верхнего левого угла наводимой области
+            varTop = $(this).offset().top - 70;
+            varLeft = $(this).offset().left + 220;
+            //делаем видимую область и задаем позиуии где отображать
+            $(".showImgDiv").css({"top":varTop,"left":varLeft}).show();
+        }
+        function showImgOff(){
+            //отключаем видимость
+            $(".showImgDiv").hide();
+        }
+    //добавляем ко всем обектам событие на запуск функции
+        $('.text_img').hover(showImg,showImgOff);
+    })
+</script>
+    
+<div class="pr"></div>
+<h3 align="center">Магазин НЖ</h3>
+<p>Магазин в котором можно приобрести оружие для разных классов и уровней, а так же Личные Абилити и патроны за НЖ .</p>
+<p>НЖ магазин расположен по следующим координатам (x:709; y:558)</p>
+<p>НЖ - Наградной Жетон  - <img src="{% static 'img/nzh/i16001.png' %}"></p>
+<table>
+	<tr >
+		<td>
+			<h4>Другое</h4>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/i18021.png' %}">ЭВИ 2(100шт) - 1 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/i18022.png' %}">.50 Action Stun(750шт) - 1 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/i18020.png' %}">ЭВИ 1(250шт) - 1 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/i18024.png' %}">8.3mm Caseless(2000шт) - 1 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/i18023.png' %}">Арбалетный болт(2000шт) - 1 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/i18025.png' %}">.223 Cal(4500шт) - 1 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/i18017.png' %}">.338 Lapua Mag.(225шт) - 1 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/i18018.png' %}">.700NE(225шт) - 1 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/i18019.png' %}">Cass-energo(225шт) - 1 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/i18010.png' %}">.gauss(225шт) - 1 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/i18015.png' %}">.300FMJ(225шт) - 1 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/i18017.png' %}">.338 Lapua Mag.(100шт) - 1100р</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/i18018.png' %}">.700NE(100шт) - 1100р</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/i18019.png' %}">Cass-energo(100шт) - 1100р</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/i18010.png' %}">.gauss(100шт) - 1100р</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/i18020.png' %}">.ЭВИ 1(100шт - 1200р</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/i18021.png' %}">ЭВИ 2(100шт) - 4000р</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<td>
+			<h4>Листки</h4>
+			
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/i20145.png' %}">!Характеристики! - 7 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/i20145.png' %}">!Умелка! - 2 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/i20145.png' %}">!Редкая абилка! - 40 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/i20145.png' %}">!Обычная абилка! - 25 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<td>
+			<h4>Ближний Бой</h4>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/tomagavk.png' %}">"Томагавк" - 1 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/perforator.png' %}">"Перфоратор" - 5 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/batleaxe.png' %}">Battle Axe - 8 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/otboynik.png' %}">КСП"Отбой" - 11 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/katana.png' %}">Катана - 21 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/rtrail.png' %}">"R-trail" - 36 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<td>
+			<h4>Лёгкое вооружение</h4>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img"  data-img="img/nzh/pushki/">M1 Carabine - 1 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/m16.png' %}">M16 - 2 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/kedr.png' %}">ПП-91"Кедр" - 2 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/mosina.png' %}">Винтовка Мосина - 2 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/hkump.png' %}">HK UMP - 5 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/ivory.png' %}">"Ivory" - 6 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="">AH-94"Абакан" - 7 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/sting.png' %}">ER-09"Sting" - 10 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/magnum.png' %}">.Magnum PRO - 14 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/famas.png' %}">FAMAS - 15 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/groza.png' %}">ОЦ-14"Гроза" - 20 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/tayfun.png' %}">ПП"Тайфун" - 20 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/hkpsg.png' %}">HK PSG-418 - 38 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<td>
+			<h4>Тяжёлое вооружение</h4>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="">Бекас 12м - 3 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/wrath.png' %}">Wrath - 5 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/saintrow.png' %}">Saintrow - 7 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/ptrd.png' %}">ПТРД - 10 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/gudvin.png' %}">Гудвин - 11 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="">"Расcтрел" - 15 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/dooms.png' %}">Doomsday - 15 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/novatactical.png' %}">Nova Tactical - 20 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/mgs.png' %}">MGS EX-40 - 40 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<td>
+			<h4>Энергооружие</h4>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/lasmitter.png' %}">Lasmitter - 7 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/t-blinker.png' %}">t-blinker - 13 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/harrier.png' %}">Harrier - 20 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<td>
+			<h4>Лечащее снаряжение</h4>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/ukol.png' %}">ИП"Укол" - 3 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/donor.png' %}">ИА"Донор" - 8 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/sklif.png' %}">ИА"Склиф" - 12 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/paracels.png' %}">ИО"Панацея" - 21 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<td>
+			<h4>Оглушающее оружие</h4>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/osa.png' %}">ОСА-66 - 20 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/weasel.png' %}">Weasel SL - 20 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/t3phalanx.png' %}">T3 Phalanx - 20 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="text_img" data-img="{% static 'img/nzh/pushki/renegat.png' %}">ТЭР"Ренегат" - 20 НЖ</p>
+			<div class="showImgDiv" style="position: absolute; padding: 5px; display: none;">
+        <img src="/">
+        </div>
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<td>
+			<h4>Обмен на жетоны</h4>
+		</td>
+	</tr>
+</table>
+    <div style="height: 300px"></div>
+{% endblock %}

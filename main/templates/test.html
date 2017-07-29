@@ -1,0 +1,28 @@
+<script type="text/javascript">
+    var utm='firm';
+    if( window.location.toString().indexOf(utm +'=') != -1) {
+        var number=(window.location.toString().substr(window.location.toString().indexOf(utm+'=')+ utm.length+1,50)).toLowerCase();
+        console.log(number);
+        if( number.indexOf('&') != -1) {
+            number=(number.substr(0,number.indexOf('&')));
+            console.log(number);
+        }
+        if(number == 'eng') {
+            document.title = 'ddddd'
+        }
+        if(number == 'iaponia') {
+
+        }
+        if(number == 'isp') {
+
+        }
+        if(number == 'itl') {
+
+        }
+    }
+</script>
+
+
+sqlalchemy.exc.IntegrityError: (psycopg2.IntegrityError) duplicate key value violates unique constraint "company_code_key"
+DETAIL:  Key (code)=(21608409) already exists.
+ [SQL: 'INSERT INTO company (name, short, code, address, zip, head, kwed_code, status, stats) VALUES (%(name)s, %(short)s, %(code)s, %(address)s, %(zip)s, %(head)s, %(kwed_code)s, %(status)s, %(stats)s) RETURNING company.id'] [parameters: {'name': 'ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ "ПМК №12"', 'short': 'ТОВ "ПМК №12"', 'address': '04213, м.Київ, Оболонський район, ВУЛИЦЯ ПРИРІЧНА, будинок 27-Е', 'zip': '04213', 'stats': '{"27.01.2017": 1}', 'status': 1, 'code': '21608409', 'head': 'ЛЮБЕНКО ПЕТРО ОЛЕКСІЙОВИЧ', 'kwed_code': '45.21.1'}]

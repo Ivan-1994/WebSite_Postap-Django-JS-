@@ -1,0 +1,27 @@
+{% extends 'main.html' %}
+
+{% load staticfiles %}
+
+{% block zavodu_proizvodstvo %}
+    <script>
+        document.title = 'Производство Заводов';
+        document.head.innerHTML += '<link href="{% static 'css/lightbox.css' %}" rel="stylesheet">';
+    </script>
+
+    <h2>Производство Заводов</h2>
+    <br>
+
+    <a href="{% static 'img/polezno/polufabrikaty.png' %}" data-lightbox="image-1" data-title="">
+        <img src="{% static 'img/polezno/polufabrikaty.png' %}" width="750px">
+    </a>
+
+    <br><br><br>
+    <a href="{% static 'img/polezno/produkcija_khim.png' %}" data-lightbox="image-1" data-title="">
+        <img src="{% static 'img/polezno/produkcija_khim.png' %}" width="750px">
+    </a>
+    <br><br><br>
+    <a href="{% static 'img/polezno/produkcija_patr.png' %}" data-lightbox="image-1" data-title="">
+        <img src="{% static 'img/polezno/produkcija_patr.png' %}" width="750px">
+    </a>
+    <script src="{% static 'js/lightbox-plus-jquery.js' %}"></script>
+{% endblock %}
